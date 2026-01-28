@@ -1,0 +1,10 @@
+name: MLOps Demo
+on: push
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Script
+        run: echo "Final check! Automation is working."
